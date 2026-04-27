@@ -94,13 +94,13 @@ http://localhost:3001/products
 
 ### 사용 방식
 
-메인 페이지에서 `fetch`를 통해 상품 목록 데이터를 가져옵니다.
+API 호출 함수는 `src/api/products.js`에 분리하여 관리합니다.  
+메인 페이지는 해당 함수를 import해서 상품 목록 데이터를 가져옵니다.
 
 ```js
-const response = await fetch("http://localhost:3001/products", {
-  cache: "no-store",
-});
-const products = await response.json();
+import { fetchProducts } from "@/api/products";
+
+const products = await fetchProducts();
 ```
 
 즉, 상품 목록은 API에서 불러오고 장바구니 상태는 프론트엔드의 Zustand store에서 관리하는 구조입니다.
@@ -147,6 +147,8 @@ const products = await response.json();
 
 ```bash
 src/
+  api/
+    products.js
   app/
     page.js
     carts/

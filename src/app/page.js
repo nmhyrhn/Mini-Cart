@@ -1,20 +1,9 @@
 import Link from "next/link";
+import { fetchProducts } from "@/api/products";
 import ProductList from "@/components/products/ProductList";
 
-async function getProducts() {
-  const response = await fetch("http://localhost:3001/products", {
-    cache: "no-store",
-  });
-
-  if (!response.ok) {
-    throw new Error("상품 데이터를 불러오지 못했습니다.");
-  }
-
-  return response.json();
-}
-
 export default async function Home() {
-  const products = await getProducts();
+  const products = await fetchProducts();
 
   return (
     <main style={{ padding: "24px" }}>
@@ -26,7 +15,7 @@ export default async function Home() {
           marginBottom: "24px",
         }}
       >
-        <h1 style ={{margin: "10px"}}>Mini Cart</h1>
+        <h1 style={{ margin: "10px" }}>Mini Cart</h1>
         <Link href="/carts">장바구니 페이지</Link>
       </nav>
 
