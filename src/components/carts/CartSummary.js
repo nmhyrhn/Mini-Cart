@@ -14,11 +14,13 @@ export default function CartSummary({ totalItems, totalPrice }) {
         borderRadius: "12px",
         padding: "16px",
         minWidth: "240px",
+        backgroundColor: "lightyellow",
+        color: "black"
       }}
     >
-      <h2>Summary</h2>
-      <p>총 수량: {totalItems}</p>
-      <p>총 금액: {totalPrice.toLocaleString("ko-KR")}원</p>
+      <h2 style={{paddingBottom: "10px"}}>Summary</h2>
+      <p style={{paddingBottom: "10px"}}>총 수량: {totalItems}</p>
+      <p style={{paddingBottom: "10px"}}>총 금액: {totalPrice.toLocaleString("ko-KR")}원</p>
       <button type="button" onClick={handleCheckout}>
         결제하기
       </button>

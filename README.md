@@ -151,8 +151,6 @@ src/
     page.js
     carts/
       page.js
-    carts-test/
-      page.js
   components/
     carts/
       CartItem.js
@@ -189,7 +187,6 @@ npm run dev
 
 - 메인 페이지: `http://localhost:3000`
 - 장바구니 페이지: `http://localhost:3000/carts`
-- 테스트 페이지: `http://localhost:3000/carts-test`
 
 ## 10. 역할 분담
 

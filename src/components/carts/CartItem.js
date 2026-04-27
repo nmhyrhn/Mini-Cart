@@ -13,12 +13,14 @@ export default function CartItem({ item }) {
         border: "1px solid #d9d9d9",
         borderRadius: "12px",
         padding: "16px",
+        backgroundColor: "lightpink",
+        color: "black"
       }}
     >
-      <h3>{item.name}</h3>
-      <p>가격: {item.price.toLocaleString("ko-KR")}원</p>
-      <p>수량: {item.quantity}</p>
-      <p>소계: {(item.price * item.quantity).toLocaleString("ko-KR")}원</p>
+      <h3 style={{paddingBottom: "10px"}}>{item.name}</h3>
+      <p style={{paddingBottom: "10px"}}>가격: {item.price.toLocaleString("ko-KR")}원</p>
+      <p style={{paddingBottom: "10px"}}>수량: {item.quantity}</p>
+      <p style={{paddingBottom: "10px"}}>소계: {(item.price * item.quantity).toLocaleString("ko-KR")}원</p>
 
       <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
         <button type="button" onClick={() => decreaseQty(item.id)}>

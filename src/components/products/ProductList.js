@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 export default function ProductList({ products }) {
   return (
     <section>
-      <h2>상품 목록</h2>
+      <h2 style={{padding: "10px 0"}}>상품 목록</h2>
 
       <div
         style={{

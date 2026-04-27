@@ -10,7 +10,9 @@ export default function ProductCard({ product }) {
       style={{
         border: "1px solid #d9d9d9",
         borderRadius: "12px",
-        padding: "16px",
+        padding: "20px",
+        backgroundColor: "lightpink",
+        color: "black"
       }}
     >
       <div
@@ -22,16 +24,15 @@ export default function ProductCard({ product }) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "#6b7280",
         }}
       >
         {product.image}
       </div>
 
-      <h3>{product.name}</h3>
-      <p>{product.price.toLocaleString("ko-KR")}원</p>
+      <h3 style={{padding: "10px 0"}}>{product.name}</h3>
+      <p style={{padding: "10px 0"}}>{product.price.toLocaleString("ko-KR")}원</p>
 
-      <button type="button" onClick={() => addToCart(product)}>
+      <button type="button" onClick={() => addToCart(product)} style={{padding: "3px", float: "right"}}>
         Add to Cart
       </button>
     </article>

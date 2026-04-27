@@ -13,12 +13,12 @@ export default function Carts() {
   return (
     <main style={{ padding: "24px" }}>
       <nav>
-        <p>Cart Page</p>
-        <Link href="/">홈으로 돌아가기</Link>
+        <h1 style={{padding: "10px 0"}}>Cart Page</h1>
+        <Link href="/" style={{float: "right"}}>홈으로 돌아가기</Link>
       </nav>
 
       <div style={{ marginTop: "24px" }}>
-        <h1>장바구니</h1>
+        <h2 style={{paddingBottom: "20px"}}>장바구니</h2>
 
         {cart.length === 0 ? (
           <p>장바구니가 비어 있습니다.</p>

@@ -26,8 +26,8 @@ export default async function Home() {
           marginBottom: "24px",
         }}
       >
-        <h1>Mini Cart</h1>
-        <Link href="/carts">장바구니 페이지로 이동</Link>
+        <h1 style ={{margin: "10px"}}>Mini Cart</h1>
+        <Link href="/carts">장바구니 페이지</Link>
       </nav>
 
       <ProductList products={products} />
