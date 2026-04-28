@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useCartStore } from "@/store/useCartStore";
 
 export default function ProductCard({ product }) {
   const addToCart = useCartStore((state) => state.addToCart);
+  const hasPreviewImage = product.image?.startsWith("/");
 
   return (
     <article
@@ -18,6 +20,7 @@ export default function ProductCard({ product }) {
       <div
         style={{
           height: "160px",
+          overflow: "hidden",
           borderRadius: "8px",
           backgroundColor: "#f3f4f6",
           marginBottom: "12px",
@@ -26,7 +29,21 @@ export default function ProductCard({ product }) {
           justifyContent: "center",
         }}
       >
-        {product.image}
+        {hasPreviewImage ? (
+          <Image
+            src={product.image}
+            alt={product.name}
+            width={320}
+            height={160}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        ) : (
+          product.image
+        )}
       </div>
 
       <h3 style={{padding: "10px 0"}}>{product.name}</h3>

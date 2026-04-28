@@ -1,8 +1,8 @@
 {
   "products":[
-  { "id": 1, "name": "베이직 티셔츠", "price": 19900, "image": "tshirt.jpg" },
-  { "id": 2, "name": "와이드 데님 팬츠", "price": 45900, "image": "denim.jpg" },
-  { "id": 3, "name": "오버핏 후드 집업", "price": 52900, "image": "hoodzip.jpg" },
+  { "id": 1, "name": "베이직 티셔츠", "price": 19900, "image": "/image/basic-tshirt.png" },
+  { "id": 2, "name": "와이드 데님 팬츠", "price": 45900, "image": "/image/wide-denim-pants.png" },
+  { "id": 3, "name": "오버핏 후드 집업", "price": 52900, "image": "/image/versized-hood-zipup.png" },
   { "id": 4, "name": "러닝 스니커즈", "price": 68900, "image": "sneakers.jpg" },
   { "id": 5, "name": "코튼 오버핏 셔츠", "price": 39900, "image": "shirt.jpg" },
   { "id": 6, "name": "슬림 슬랙스 팬츠", "price": 49900, "image": "slacks.jpg" },
