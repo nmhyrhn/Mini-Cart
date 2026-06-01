@@ -2,7 +2,7 @@ package com.minicart.product;
 
 public class ProductDTO {
 
-    private String productId;
+    private int productId;
     private String name;
     private int price;
     private String image;
@@ -10,18 +10,18 @@ public class ProductDTO {
     public ProductDTO() {
     }
 
-    public ProductDTO(String productId, String name, int price, String image) {
+    public ProductDTO(int productId, String name, int price, String image) {
         this.productId = productId;
         this.name = name;
         this.price = price;
         this.image = image;
     }
 
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
