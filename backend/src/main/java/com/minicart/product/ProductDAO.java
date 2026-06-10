@@ -18,9 +18,9 @@ public class ProductDAO {
 
         String query =
                 """
-                    SELECT PRODUCT_ID, NAME, PRICE, IMAGE
-                    FROM PRODUCTS
-                    ORDER BY PRODUCT_ID
+                    SELECT product_id, name, price, image
+                    FROM products
+                    ORDER BY product_id
                 """;
 
         PreparedStatement pstmt = null;

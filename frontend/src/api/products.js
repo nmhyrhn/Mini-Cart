@@ -1,5 +1,5 @@
 export async function fetchProducts() {
-  const response = await fetch("http://localhost:3001/products", {
+  const response = await fetch("http://localhost:8080/backend/api/products", {
     cache: "no-store",
   });
 
