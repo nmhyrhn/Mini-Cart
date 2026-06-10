@@ -1,0 +1,23 @@
+{
+  "products":[
+  { "id": 1, "name": "베이직 티셔츠", "price": 19900, "image": "/image/basic-tshirt.png" },
+  { "id": 2, "name": "와이드 데님 팬츠", "price": 45900, "image": "/image/wide-denim-pants.png" },
+  { "id": 3, "name": "오버핏 후드 집업", "price": 52900, "image": "/image/versized-hood-zipup.png" },
+  { "id": 4, "name": "러닝 스니커즈", "price": 68900, "image": "sneakers.jpg" },
+  { "id": 5, "name": "코튼 오버핏 셔츠", "price": 39900, "image": "shirt.jpg" },
+  { "id": 6, "name": "슬림 슬랙스 팬츠", "price": 49900, "image": "slacks.jpg" },
+  { "id": 7, "name": "라운드 니트 스웨터", "price": 35900, "image": "knit.jpg" },
+  { "id": 8, "name": "스트라이프 긴팔 티", "price": 22900, "image": "stripe.jpg" },
+  { "id": 9, "name": "캐주얼 볼캡 모자", "price": 15900, "image": "cap.jpg" },
+  { "id": 10, "name": "데일리 백팩", "price": 59900, "image": "backpack.jpg" },
+  { "id": 11, "name": "레더 숄더백", "price": 79900, "image": "leatherbag.jpg" },
+  { "id": 12, "name": "화이트 스니커즈", "price": 69900, "image": "white_sneakers.jpg" },
+  { "id": 13, "name": "앵클 부츠", "price": 89900, "image": "boots.jpg" },
+  { "id": 14, "name": "플리스 집업 자켓", "price": 44900, "image": "fleece.jpg" },
+  { "id": 15, "name": "롱 트렌치 코트", "price": 99900, "image": "trench.jpg" },
+  { "id": 16, "name": "체크 셔츠 남방", "price": 29900, "image": "checkshirt.jpg" },
+  { "id": 17, "name": "데님 자켓", "price": 64900, "image": "denimjacket.jpg" },
+  { "id": 18, "name": "조거 팬츠", "price": 34900, "image": "jogger.jpg" },
+  { "id": 19, "name": "스포츠 반팔 티", "price": 18900, "image": "sportstshirt.jpg" }
+]
+} 
